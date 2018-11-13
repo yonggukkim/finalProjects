@@ -18,7 +18,7 @@ public class MemberSessionRepository extends AbstractRepository{
 			Integer result = sqlSession.insert(statement, member);
 			if(result > 0) sqlSession.commit();
 			else sqlSession.rollback();
-			return result;
+			return result; 
 		}finally {
 			sqlSession.close();
 		}
