@@ -12,6 +12,13 @@ public class Staff implements Serializable{
 	private String staffPhone; // 직원핸드폰번호
 	private String staffDpt; // 부서이름
 	private String staffPhotoFile; // 직원 사진파일이름
+	private String staffDvice; // 회원구분
+	public String getStaffDvice() {
+		return staffDvice;
+	}
+	public void setStaffDvice(String staffDvice) {
+		this.staffDvice = staffDvice;
+	}
 	public String getStaffNumber() {
 		return staffNumber;
 	}
