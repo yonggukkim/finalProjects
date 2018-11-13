@@ -1,3 +1,5 @@
 /model/
 /controller/
 /service/
+/repository/
+/MemberSessionRepository/
