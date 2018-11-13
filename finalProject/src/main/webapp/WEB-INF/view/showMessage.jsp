@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<title>Welcome</title>
 	</head> 
-	<body>dfdfd
-		<h2>${message}</h2>123
+	<body>
+		<h2>${message}</h2>
 	</body>
 </html>
