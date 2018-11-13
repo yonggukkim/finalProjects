@@ -60,28 +60,29 @@
           <div class="card-body">
     			
 			<div class="form-group" id="divId">
+				<input type="hidden" id="memberNum" name="memberNum">
                 <label for="inputId" class="col-lg-2 control-label">아이디</label>
                 <div class="col-lg-10">
-                    <input type="text" class="form-control onlyAlphabetAndNumber" id="memberId" data-rule-required="true" placeholder="영어 숫자만 입력 가능" maxlength="30">
+                    <input type="text" class="form-control onlyAlphabetAndNumber" id="memberId" name="memberId" data-rule-required="true" placeholder="영어 숫자만 입력 가능" maxlength="30">
                 </div>
             </div>
 
             <div class="form-group" id="divPassword">
                 <label for="inputPassword" class="col-lg-2 control-label">패스워드</label>
                 <div class="col-lg-10">
-                    <input type="password" class="form-control" id="memberPw" name="excludeHangul" data-rule-required="true" placeholder="패스워드" maxlength="30">
+                    <input type="password" class="form-control" id="memberPw" name="memberPw" data-rule-required="true" placeholder="패스워드" maxlength="30">
                 </div>
             </div>
             <div class="form-group" id="divPasswordCheck">
                 <label for="inputPasswordCheck" class="col-lg-2 control-label">패스워드 확인</label>
                 <div class="col-lg-10">
-                    <input type="password" class="form-control" id="passwordCheck" data-rule-required="true" placeholder="패스워드 확인" maxlength="30">
+                    <input type="password" class="form-control" id="memberPw1" name="memberPw1" data-rule-required="true" placeholder="패스워드 확인" maxlength="30">
                 </div>
             </div>
             <div class="form-group" id="divName">
                 <label for="inputName" class="col-lg-2 control-label">이름</label>
                 <div class="col-lg-10">
-                    <input type="text" class="form-control onlyHangul" id="memberName" data-rule-required="true" placeholder="한글만 입력 가능합니다." maxlength="15">
+                    <input type="text" class="form-control onlyHangul" id="memberName" name="memberName" data-rule-required="true" placeholder="한글만 입력 가능합니다." maxlength="15">
                 </div>
             </div>
             </div>
@@ -92,14 +93,15 @@
                         <div class="form-group" id="divEmail">
                 <label for="inputEmail" class="col-lg-2 control-label">이메일</label>
                 <div class="col-lg-10">
-                    <input type="email" class="form-control" id="email" data-rule-required="true" placeholder="이메일을 입력해 주세요" maxlength="40">
+                    <input type="email" class="form-control" id="memberEmail" name="memberEmail" data-rule-required="true" placeholder="이메일을 입력해 주세요" maxlength="40">
                 </div>
             </div>
             
             <!-- 휴대폰 국가 번호 -->
  <div class ="form-group">
                          생년월일
-                    <script type="text/javascript" id="memberBirth">
+                    <script type="text/javascript" id="memberBirth" name="memberBirth">
+                        
                          var today = new Date();
                          var toyear = parseInt(today.getFullYear ());
                          var start = toyear;
@@ -124,21 +126,21 @@
             <div class="form-group" id="divPhoneNumber">
                 <label for="inputPhoneNumber" class="col-lg-2 control-label">휴대폰 번호</label>
                 <div class="col-lg-10">
-                    <input type="tel" class="form-control onlyNumber" id=memberPhone data-rule-required="true" placeholder="무선 전화번호를 입력하세요." maxlength="11">
+                    <input type="tel" class="form-control onlyNumber" id=memberPhone name="memberPhone" data-rule-required="true" placeholder="무선 전화번호를 입력하세요." maxlength="11">
                 </div>
             </div>
              <div class="form-group" id="divTelNumber">
                 <label for="inputTelNumber" class="col-lg-2 control-label">유선 번호</label>
                 <div class="col-lg-10">
-                    <input type="tel" class="form-control onlyNumber" id="memberTel" data-rule-required="true" placeholder="유선 전화번호를 입력하세요." maxlength="11">
+                    <input type="tel" class="form-control onlyNumber" id="memberTel" name="memberTel" data-rule-required="true" placeholder="유선 전화번호를 입력하세요." maxlength="11">
                 </div>
             </div>
          
 
-<input type="text" id="memberPostcode" placeholder="우편번호">
+<input type="text" id="memberPostcode" name="memberPostcode"placeholder="우편번호">
 <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
-<input type="text" id="memberAddr1" placeholder="주소">
-<input type="text" id="memberAddr2" placeholder="상세주소">
+<input type="text" id="memberAddr1" name="memberAddr1" placeholder="주소">
+<input type="text" id="memberAddr2" name="memberAddr2" placeholder="상세주소">
 ​
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 <script>
@@ -201,10 +203,10 @@
                 <label for="inputMarriage" class="col-lg-2 control-label">결혼 유무</label>
                 <div class="col-lg-10">
                     <label class="radio-inline">
-                        <input type="radio" id="memberMarrige" name="marriage" value="Y" checked>미혼
+                        <input type="radio" id="memberMarrige" name="memberMarrige" value="Y" checked>미혼
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" id="memberMarrige" name="marriage" value="N">기혼
+                        <input type="radio" id="memberMarrige" name="memberMarrige" value="N">기혼
                     </label>
                 </div>
             
@@ -213,7 +215,7 @@
             <div class="form-group">
                 <label for="inputJob" class="col-lg-2 control-label">직업</label>
                 <div class="col-lg-3">
-                    <select class="form-control" id="memberJob">
+                    <select class="form-control" id="memberJob" name="memberJob">
                         <option value="">회사원</option>
                         <option value="">자영업</option>
                         <option value="">주부</option>
@@ -250,10 +252,10 @@
                 <label for="inputEmailReceiveYn" class="col-lg-2 control-label">이벤트 우편물 수신여부</label>
                 <div class="col-lg-10">
                     <label class="radio-inline">
-                        <input type="radio" id="memberAgreeTel" name="memberAgreeTel" value="Y" checked> 동의합니다.
+                        <input type="radio" id="memberAgreePost" name="memberAgreePost" value="Y" checked> 동의합니다.
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" id="memberAgreeTel" name="memberAgreeTel" value="N"> 동의하지 않습니다.
+                        <input type="radio" id="memberAgreePost" name="memberAgreePost" value="N"> 동의하지 않습니다.
                     </label>
                 </div>
                                  <div class="form-group">
