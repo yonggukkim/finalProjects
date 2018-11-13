@@ -5,9 +5,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Welcome111</title>
+		<title>Welcome</title>
 	</head> 
 	<body>
-		<h2>${message}</h2>
+		<h2>${message}</h2>하이
 	</body>
 </html>
