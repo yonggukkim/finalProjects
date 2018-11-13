@@ -50,10 +50,10 @@ function rowdel()
     <title>Shop Item - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost:8080/finalProject/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/shop-item.css" rel="stylesheet">
+    <link href="http://localhost:8080/finalProject/css/shop-item.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -105,7 +105,7 @@ function rowdel()
                             </table>
 
                             <div id="fam_add" style="display:;">
-                                여행자 추가시 [추가]버튼을 눌러주세요. <img src="../../../images/mypage/bt_add.gif" align="absmiddle" border="0" onclick="family_add();" /> 
+                                여행자 추가시 [추가]버튼을 눌러주세요. <img src="http://localhost:8080/finalProject/images/mypage/bt_add.gif" align="absmiddle" border="0" onclick="family_add();" /> 
                             </div>
                         <div class="row justify-content-center">
 	          <button type="submit" class="btn" style="margin-bottom:20px">결제하기</button>

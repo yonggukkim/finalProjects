@@ -18,9 +18,8 @@ public class MemberController {
 		return "map";
 		
 	}
-	@RequestMapping(value="/login", method=RequestMethod.GET)
+	@RequestMapping(value="/main", method=RequestMethod.GET)
 	public String handleStep3(Model model) {
-		return "member/login";
-		
+		return "main";
 	}
 }
