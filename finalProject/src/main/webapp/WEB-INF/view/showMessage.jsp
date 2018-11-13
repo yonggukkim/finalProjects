@@ -8,6 +8,6 @@
 		<title>Welcome</title>
 	</head> 
 	<body>
-		<h2>${message}</h2>11111
+		<h2>${message}김수환수정</h2>
 	</body>
 </html>
