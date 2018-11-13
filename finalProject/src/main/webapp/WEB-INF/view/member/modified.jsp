@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">giftrip</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -62,26 +62,31 @@
 			<div class="form-group" id="divId">
                 <label for="inputId" class="col-lg-2 control-label">아이디</label>
                 <div class="col-lg-10">
-                    <input type="text" class="form-control onlyAlphabetAndNumber" id="memberId" data-rule-required="true" placeholder="영어 숫자만 입력 가능" maxlength="30">
                 </div>
             </div>
 
             <div class="form-group" id="divPassword">
-                <label for="inputPassword" class="col-lg-2 control-label">패스워드</label>
+                <label for="inputPassword" class="col-lg-2 control-label">현재 패스워드</label>
                 <div class="col-lg-10">
-                    <input type="password" class="form-control" id="memberPw" name="excludeHangul" data-rule-required="true" placeholder="패스워드" maxlength="30">
+                    <input type="password" class="form-control" id="password" name="excludeHangul" data-rule-required="true" placeholder="패스워드" maxlength="30">
                 </div>
             </div>
             <div class="form-group" id="divPasswordCheck">
-                <label for="inputPasswordCheck" class="col-lg-2 control-label">패스워드 확인</label>
+                <label for="inputPasswordCheck" class="col-lg-2 control-label">새 패스워드</label>
                 <div class="col-lg-10">
-                    <input type="password" class="form-control" id="passwordCheck" data-rule-required="true" placeholder="패스워드 확인" maxlength="30">
+                    <input type="password" class="form-control" id="newPassword" data-rule-required="true" placeholder="패스워드 확인" maxlength="30">
+                </div>
+            </div>
+                        <div class="form-group" id="divPasswordCheck">
+                <label for="inputPasswordCheck" class="col-lg-2 control-label">새 패스워드 확인</label>
+                <div class="col-lg-10">
+                    <input type="password" class="form-control" id="newPasswordCheck" data-rule-required="true" placeholder="패스워드 확인" maxlength="30">
                 </div>
             </div>
             <div class="form-group" id="divName">
                 <label for="inputName" class="col-lg-2 control-label">이름</label>
                 <div class="col-lg-10">
-                    <input type="text" class="form-control onlyHangul" id="memberName" data-rule-required="true" placeholder="한글만 입력 가능합니다." maxlength="15">
+               
                 </div>
             </div>
             </div>
@@ -99,7 +104,7 @@
             <!-- 휴대폰 국가 번호 -->
  <div class ="form-group">
                          생년월일
-                    <script type="text/javascript" id="memberBirth">
+                    <script type="text/javascript">
                          var today = new Date();
                          var toyear = parseInt(today.getFullYear ());
                          var start = toyear;
@@ -124,21 +129,21 @@
             <div class="form-group" id="divPhoneNumber">
                 <label for="inputPhoneNumber" class="col-lg-2 control-label">휴대폰 번호</label>
                 <div class="col-lg-10">
-                    <input type="tel" class="form-control onlyNumber" id=memberPhone data-rule-required="true" placeholder="무선 전화번호를 입력하세요." maxlength="11">
+                    <input type="tel" class="form-control onlyNumber" id="phoneNumber" data-rule-required="true" placeholder="무선 전화번호를 입력하세요." maxlength="11">
                 </div>
             </div>
              <div class="form-group" id="divTelNumber">
                 <label for="inputTelNumber" class="col-lg-2 control-label">유선 번호</label>
                 <div class="col-lg-10">
-                    <input type="tel" class="form-control onlyNumber" id="memberTel" data-rule-required="true" placeholder="유선 전화번호를 입력하세요." maxlength="11">
+                    <input type="tel" class="form-control onlyNumber" id="telNumber" data-rule-required="true" placeholder="유선 전화번호를 입력하세요." maxlength="11">
                 </div>
             </div>
          
 
-<input type="text" id="memberPostcode" placeholder="우편번호">
+<input type="text" id="sample6_postcode" placeholder="우편번호">
 <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
-<input type="text" id="memberAddr1" placeholder="주소">
-<input type="text" id="memberAddr2" placeholder="상세주소">
+<input type="text" id="sample6_address" placeholder="주소">
+<input type="text" id="sample6_address2" placeholder="상세주소">
 ​
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 <script>
@@ -190,21 +195,17 @@
             
             <div class="form-group">
                 <label for="inputGender" class="col-lg-2 control-label">성별</label>
-                <div class="col-lg-1">
-                    <select class="form-control" id="memberGender">
-                        <option value="M">남</option>
-                        <option value="F">여</option>
-                    </select>
+
                 </div>
             </div>
                                          <div class="form-group">
                 <label for="inputMarriage" class="col-lg-2 control-label">결혼 유무</label>
                 <div class="col-lg-10">
                     <label class="radio-inline">
-                        <input type="radio" id="memberMarrige" name="marriage" value="Y" checked>미혼
+                        <input type="radio" id="marriage" name="marriage" value="Y" checked>미혼
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" id="memberMarrige" name="marriage" value="N">기혼
+                        <input type="radio" id="marriage" name="marriage" value="N">기혼
                     </label>
                 </div>
             
@@ -213,7 +214,7 @@
             <div class="form-group">
                 <label for="inputJob" class="col-lg-2 control-label">직업</label>
                 <div class="col-lg-3">
-                    <select class="form-control" id="memberJob">
+                    <select class="form-control" id="job">
                         <option value="">회사원</option>
                         <option value="">자영업</option>
                         <option value="">주부</option>
@@ -229,20 +230,20 @@
                 <label for="inputEmailReceiveYn" class="col-lg-2 control-label">이벤트 이메일 수신여부</label>
                 <div class="col-lg-10">
                     <label class="radio-inline">
-                        <input type="radio" id="memberAgreeMailing" name="memberAgreeMailing" value="Y" checked> 수신
+                        <input type="radio" id="emailReceiveYn" name="eventMail" value="Y" checked> 수신
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" id="memberAgreeMailing" name="memberAgreeMailing" value="N"> 수신거부
+                        <input type="radio" id="emailReceiveYn" name="eventMail" value="N"> 수신거부
                     </label>
                 </div>
                              <div class="form-group">
                 <label for="inputEmailReceiveYn" class="col-lg-2 control-label">이벤트 문자 수신여부</label>
                 <div class="col-lg-10">
                     <label class="radio-inline">
-                        <input type="radio" id="memberAgreeSms" name="memberAgreeSms" value="Y" checked> 동의합니다.
+                        <input type="radio" id="emailReceiveYn" name="eventSMS" value="Y" checked> 동의합니다.
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" id="memberAgreeSms" name="memberAgreeSms" value="N"> 동의하지 않습니다.
+                        <input type="radio" id="emailReceiveYn" name="eventSMS" value="N"> 동의하지 않습니다.
                     </label>
                 </div>
                 
@@ -250,20 +251,20 @@
                 <label for="inputEmailReceiveYn" class="col-lg-2 control-label">이벤트 우편물 수신여부</label>
                 <div class="col-lg-10">
                     <label class="radio-inline">
-                        <input type="radio" id="memberAgreeTel" name="memberAgreeTel" value="Y" checked> 동의합니다.
+                        <input type="radio" id="emailReceiveYn" name="eventMailItem" value="Y" checked> 동의합니다.
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" id="memberAgreeTel" name="memberAgreeTel" value="N"> 동의하지 않습니다.
+                        <input type="radio" id="emailReceiveYn" name="eventMailItem" value="N"> 동의하지 않습니다.
                     </label>
                 </div>
                                  <div class="form-group">
                 <label for="inputEmailReceiveYn" class="col-lg-2 control-label">이벤트 유선전화 수신여부</label>
                 <div class="col-lg-10">  
                     <label class="radio-inline">
-                        <input type="radio" id="memberAgreeTel" name="memberAgreeTel" value="Y" checked> 동의합니다.
+                        <input type="radio" id="emailReceiveYn" name="eventTelephone" value="Y" checked> 동의합니다.
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" id="memberAgreeTel" name="memberAgreeTel" value="N"> 동의하지 않습니다.
+                        <input type="radio" id="emailReceiveYn" name="eventTelephone" value="N"> 동의하지 않습니다.
                     </label>
                 </div>
             </div>
@@ -300,6 +301,7 @@
 
     <!-- Custom JavaScript for this theme -->
     <script src="http://localhost:8080/finalProject/js/scrolling-nav.js"></script>
+
 
   </body>
 
