@@ -25,5 +25,10 @@ public class MemberController {
 		return "member/login";
 
 	}
+	
+	@RequestMapping(value="/mainpage1", method = RequestMethod.GET)
+	public String mainPage(Model model) {
+		return "mainPage/mainPage";
+	}
 
 }

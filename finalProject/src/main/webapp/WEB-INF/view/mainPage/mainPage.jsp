@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>GIFTRIP 여행</title>
 
 
     <!-- Custom styles for this template -->
@@ -100,25 +100,25 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item active" style="background-image: url('/finalProject/mainPage/mainImages/main1.jpg')">
+            <!-- <div class="carousel-caption d-none d-md-block">
               <h3>First Slide</h3>
               <p>This is a description for the first slide.</p>
-            </div>
+            </div> -->
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item" style="background-image: url('/finalProject/mainPage/mainImages/main2.jpg')">
+            <!-- <div class="carousel-caption d-none d-md-block">
               <h3>Second Slide</h3>
               <p>This is a description for the second slide.</p>
-            </div>
+            </div> -->
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item" style="background-image: url('/finalProject/mainPage/mainImages/main3.jpg')">
+            <!-- <div class="carousel-caption d-none d-md-block">
               <h3>Third Slide</h3>
               <p>This is a description for the third slide.</p>
-            </div>
+            </div> -->
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -136,17 +136,17 @@
 
       <div class="row text-center text-lg-left">
 
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">패키지여행
+        <div class="col-lg-4 mb-4">
+          <a href="selfMain" class="d-block mb-4 h-100">패키지여행
             <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
           </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
+        <div class="col-lg-4 mb-4">
           <a href="#" class="d-block mb-4 h-100">세미패키지여행
             <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
           </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
+        <div class="col-lg-4 mb-4">
           <a href="#" class="d-block mb-4 h-100">자유여행
             <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
           </a>
