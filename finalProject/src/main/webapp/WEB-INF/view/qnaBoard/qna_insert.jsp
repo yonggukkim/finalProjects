@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,14 +13,16 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>qna_write.jsp</title>
+<title>qna_insert.jsp</title>
 
 <!-- Bootstrap core CSS -->
-<link href="http://localhost:8080/finalProject/vendor/bootstrap/css/bootstrap.min.css"
+<link
+	href="http://localhost:8080/finalProject/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="http://localhost:8080/finalProject/css/scrolling-nav.css" rel="stylesheet">
+<link href="http://localhost:8080/finalProject/css/scrolling-nav.css"
+	rel="stylesheet">
 
 </head>
 
@@ -57,33 +60,30 @@
 						<h2>질문글쓰기</h2>
 					</thead>
 					<tbody>
-						<form action="" method="post" encType="multiplart/form-data">
+						<form:form commandName="qna" action="qna_insert">
+
 							<tr>
 								<th>제목 :</th>
-								<td><input type="text" placeholder="제목을 입력하세요. "
-									name="subject" class="" /></td>
+								<td><form:input path="qnaSubject" /></td>
 							</tr>
 							<tr>
 								<th>내용 :</th>
-								<td><textarea cols="30" placeholder="내용을 입력하세요. "
-										name="content" class=""></textarea></td>
+								<td><form:input path="qnaContent" /></td>
 							</tr>
 							<tr>
 								<th>첨부파일 :</th>
-								<td><input type="file" placeholder="파일을 선택하세요. "
-									name="filename" class="" /></td>
+								<td><form:input path="qnaFile" /></td>
 							</tr>
 							<tr>
 								<th>비밀번호 :</th>
-								<td><input type="password" placeholder="비밀번호를 입력하세요"
-									class="" /></td>
+								<td><form:password path="qnaPw" /></td>
 							</tr>
 							<tr>
-								<td colspan="2"><input type="button" value="등록" onclick=""
+								<td colspan="2"><input type="submit" value="등록" onclick=""
 									class="" /> <input type="button" value="글 목록" class=" "
 									onclick="" /></td>
 							</tr>
-						</form>
+						</form:form>
 				</table>
 			</div>
 			<!--</div>-->
@@ -109,8 +109,7 @@
 		src="http://localhost:8080/finalProject/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 	<!-- Custom JavaScript for this theme -->
-	<script
-		src="http://localhost:8080/finalProject/js/scrolling-nav.js"></script>
+	<script src="http://localhost:8080/finalProject/js/scrolling-nav.js"></script>
 
 </body>
 
