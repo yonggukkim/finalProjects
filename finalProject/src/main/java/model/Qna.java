@@ -13,10 +13,10 @@ public class Qna implements Serializable {
 	private String qnaContent; // 질문게시판 글내용
 	private String qnaFile; // 질문게시판 첨부이미지파일이름
 	private String qnaPw; // 질문게시판 글 비밀번호
-	private long qnaCount; // 질문게시판조회수
+	private Long qnaCount; // 질문게시판조회수
 
 	public Qna(String qnaNum, String memberNum, String staffNumber, Date qnaDate, String qnaSubject, String qnaContent,
-			String qnaFile, String qnaPw, long qnaCount) {
+			String qnaFile, String qnaPw, Long qnaCount) {
 		this.qnaNum = qnaNum;
 		this.memberNum = memberNum;
 		this.staffNumber = staffNumber;
@@ -95,11 +95,11 @@ public class Qna implements Serializable {
 		this.qnaPw = qnaPw;
 	}
 
-	public long getQnaCount() {
+	public Long getQnaCount() {
 		return qnaCount;
 	}
 
-	public void setQnaCount(long qnaCount) {
+	public void setQnaCount(Long qnaCount) {
 		this.qnaCount = qnaCount;
 	}
 }

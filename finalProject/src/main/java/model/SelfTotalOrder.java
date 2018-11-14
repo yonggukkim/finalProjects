@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class SelfTotalOrder implements Serializable{
 	private String selfTotalOrder; // 주문번호
 	private String memberNum; // 회원등록번호
-	private int selfTouristTotalNumber; // 여행자 총 인원
+	private Integer selfTouristTotalNumber; // 여행자 총 인원
 	private String selfRequestContent; // 요청사항 내용
 	private String selfPromotionCode; // 프로모션 코드
 	public String getSelfTotalOrder() {
@@ -20,10 +20,10 @@ public class SelfTotalOrder implements Serializable{
 	public void setMemberNum(String memberNum) {
 		this.memberNum = memberNum;
 	}
-	public int getSelfTouristTotalNumber() {
+	public Integer getSelfTouristTotalNumber() {
 		return selfTouristTotalNumber;
 	}
-	public void setSelfTouristTotalNumber(int selfTouristTotalNumber) {
+	public void setSelfTouristTotalNumber(Integer selfTouristTotalNumber) {
 		this.selfTouristTotalNumber = selfTouristTotalNumber;
 	}
 	public String getSelfRequestContent() {

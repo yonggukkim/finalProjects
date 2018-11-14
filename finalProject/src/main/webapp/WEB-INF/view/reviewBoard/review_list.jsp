@@ -15,8 +15,12 @@
 <title>review_list.jsp</title>
 
 <!-- Bootstrap core CSS -->
-<link href="http://localhost:8080/finalProject/vendor/bootstrap/css/bootstrap.min.css"
-	rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 
 <!-- Custom styles for this template -->
 <link href="http://localhost:8080/finalProject/css/scrolling-nav.css" rel="stylesheet">
@@ -163,19 +167,19 @@
 		<!-- /.container -->
 	</footer>
 
-	<!-- Bootstrap core JavaScript -->
-	<script
+<!-- 	<!-- Bootstrap core JavaScript -->
+<!-- 	<script
 		src="http://localhost:8080/finalProject/vendor/jquery/jquery.min.js"></script>
 	<script
 		src="http://localhost:8080/finalProject/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-	<!-- Plugin JavaScript -->
+	Plugin JavaScript
 	<script
 		src="http://localhost:8080/finalProject/resources/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-	<!-- Custom JavaScript for this theme -->
+	Custom JavaScript for this theme
 	<script
-		src="http://localhost:8080/finalProject/resources/js/scrolling-nav.js"></script>
+		src="http://localhost:8080/finalProject/resources/js/scrolling-nav.js"></script> --> -->
 
 </body>
 
