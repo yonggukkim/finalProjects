@@ -15,7 +15,7 @@ public class SelfPaymentNumber implements Serializable{
 	private String selfBankName; // 은행이름
 	private Date selfPaymentDate; // 결제날짜
 	private String selfPaymentTime; // 결제시간
-	private long selfPaymentPrice; // 결제금액가격
+	private Long selfPaymentPrice; // 결제금액가격
 	public String getSelfPaymentNumber() {
 		return selfPaymentNumber;
 	}
@@ -82,10 +82,10 @@ public class SelfPaymentNumber implements Serializable{
 	public void setSelfPaymentTime(String selfPaymentTime) {
 		this.selfPaymentTime = selfPaymentTime;
 	}
-	public long getSelfPaymentPrice() {
+	public Long getSelfPaymentPrice() {
 		return selfPaymentPrice;
 	}
-	public void setSelfPaymentPrice(long selfPaymentPrice) {
+	public void setSelfPaymentPrice(Long selfPaymentPrice) {
 		this.selfPaymentPrice = selfPaymentPrice;
 	}
 }

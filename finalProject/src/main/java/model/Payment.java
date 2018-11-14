@@ -7,7 +7,7 @@ public class Payment implements Serializable{
 	private String paymentNum; // 결제번호
 	private String pkgOrderNum; // 주문번호
 	private String memberNum; // 회원등록번호
-	private long pkgPaymentPrice; // 결제금액가격
+	private Long pkgPaymentPrice; // 결제금액가격
 	private String pkgPaymentMethod; // 결제수단종류
 	private String pkgPaymentInstallment; // 할부기간
 	private String pkgAccountNum; // 계좌번호
@@ -34,10 +34,10 @@ public class Payment implements Serializable{
 	public void setMemberNum(String memberNum) {
 		this.memberNum = memberNum;
 	}
-	public long getPkgPaymentPrice() {
+	public Long getPkgPaymentPrice() {
 		return pkgPaymentPrice;
 	}
-	public void setPkgPaymentPrice(long pkgPaymentPrice) {
+	public void setPkgPaymentPrice(Long pkgPaymentPrice) {
 		this.pkgPaymentPrice = pkgPaymentPrice;
 	}
 	public String getPkgPaymentMethod() {

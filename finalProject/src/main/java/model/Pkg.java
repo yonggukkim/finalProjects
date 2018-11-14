@@ -8,12 +8,12 @@ public class Pkg implements Serializable{
 	private String staffNumber; // 직원번호
 	private String pkgName; // 여행상품이름
 	private String pkgTheme; // 여행상품테마종류
-	private long pkgPrice; // 여행상품가격
+	private Long pkgPrice; // 여행상품가격
 	private String pkgPeriod; // 상품여행기간
 	private String pkgContent; // 여행상품설명
-	private int pkgMemberMin; // 여행상품 최소신청인원
-	private int pkgMemberCur; // 여행상품 현재신청인원
-	private int pkgMemberMax; // 여행상품 마감인원
+	private Integer pkgMemberMin; // 여행상품 최소신청인원
+	private Integer pkgMemberCur; // 여행상품 현재신청인원
+	private Integer pkgMemberMax; // 여행상품 마감인원
 	private String pkgReview; // 여행상품 후기내용
 	private String pkgFile; // 여행상품 이미지파일이름
 	private String pkgCaution; // 여행상품 유의사항내용
@@ -51,10 +51,10 @@ public class Pkg implements Serializable{
 	public void setPkgTheme(String pkgTheme) {
 		this.pkgTheme = pkgTheme;
 	}
-	public long getPkgPrice() {
+	public Long getPkgPrice() {
 		return pkgPrice;
 	}
-	public void setPkgPrice(long pkgPrice) {
+	public void setPkgPrice(Long pkgPrice) {
 		this.pkgPrice = pkgPrice;
 	}
 	public String getPkgPeriod() {
@@ -69,22 +69,22 @@ public class Pkg implements Serializable{
 	public void setPkgContent(String pkgContent) {
 		this.pkgContent = pkgContent;
 	}
-	public int getPkgMemberMin() {
+	public Integer getPkgMemberMin() {
 		return pkgMemberMin;
 	}
-	public void setPkgMemberMin(int pkgMemberMin) {
+	public void setPkgMemberMin(Integer pkgMemberMin) {
 		this.pkgMemberMin = pkgMemberMin;
 	}
-	public int getPkgMemberCur() {
+	public Integer getPkgMemberCur() {
 		return pkgMemberCur;
 	}
-	public void setPkgMemberCur(int pkgMemberCur) {
+	public void setPkgMemberCur(Integer pkgMemberCur) {
 		this.pkgMemberCur = pkgMemberCur;
 	}
-	public int getPkgMemberMax() {
+	public Integer getPkgMemberMax() {
 		return pkgMemberMax;
 	}
-	public void setPkgMemberMax(int pkgMemberMax) {
+	public void setPkgMemberMax(Integer pkgMemberMax) {
 		this.pkgMemberMax = pkgMemberMax;
 	}
 	public String getPkgReview() {

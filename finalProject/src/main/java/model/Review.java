@@ -12,8 +12,8 @@ public class Review implements Serializable {
 	private String reviewContent; // 후기내용
 	private String reviewFile; // 후기 이미지파일이름
 	private String reviewPw; // 후기 글비밀번호
-	private long reviewCount; // 후기 게시판조회수
-	private long reviewRating; // 후기게시판별점
+	private Long reviewCount; // 후기 게시판조회수
+	private Long reviewRating; // 후기게시판별점
 
 	public Review(String reviewNum, String pkgNum, String memberNum, Date reviewDate, String reviewContent,
 			String reviewFile, String reviewPw, Long reviewCount, Long reviewRating) {
@@ -87,19 +87,19 @@ public class Review implements Serializable {
 		this.reviewPw = reviewPw;
 	}
 
-	public long getReviewCount() {
+	public Long getReviewCount() {
 		return reviewCount;
 	}
 
-	public void setReviewCount(long reviewCount) {
+	public void setReviewCount(Long reviewCount) {
 		this.reviewCount = reviewCount;
 	}
 
-	public long getReviewRating() {
+	public Long getReviewRating() {
 		return reviewRating;
 	}
 
-	public void setReviewRating(long reviewRating) {
+	public void setReviewRating(Long reviewRating) {
 		this.reviewRating = reviewRating;
 	}
 }

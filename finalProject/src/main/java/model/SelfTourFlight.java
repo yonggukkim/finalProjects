@@ -5,7 +5,7 @@ import java.util.Date;
 @SuppressWarnings("serial")
 public class SelfTourFlight implements Serializable{
 	private String selfFlightNum; // 항공권번호
-	private long selfFlightPrice; // 항공권가격
+	private Long selfFlightPrice; // 항공권가격
 	private String selfFlightAirline; //항공사이름
 	private String selfFlightName; // 항공권 편이름
 	private String selfFlightSeat; // 좌석번호
@@ -28,10 +28,10 @@ public class SelfTourFlight implements Serializable{
 	public void setSelfFlightNum(String selfFlightNum) {
 		this.selfFlightNum = selfFlightNum;
 	}
-	public long getSelfFlightPrice() {
+	public Long getSelfFlightPrice() {
 		return selfFlightPrice;
 	}
-	public void setSelfFlightPrice(long selfFlightPrice) {
+	public void setSelfFlightPrice(Long selfFlightPrice) {
 		this.selfFlightPrice = selfFlightPrice;
 	}
 	public String getSelfFlightAirline() {

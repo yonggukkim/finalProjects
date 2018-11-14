@@ -6,7 +6,7 @@ public class Hotel implements Serializable{
 	private String hotelNum; // 숙박시설 등록번호
 	private String staffNumber; // 직원번호
 	private String hotelName; // 숙박시설이름
-	private long hotelPrice; // 숙박시설 가격
+	private Long hotelPrice; // 숙박시설 가격
 	private String hotelCheckin; // 숙박시설 입실시간
 	private String hotelCheckout; // 숙박시설 퇴실시간
 	private String hotelBreakfast; // 조식여부
@@ -38,10 +38,10 @@ public class Hotel implements Serializable{
 	public void setHotelName(String hotelName) {
 		this.hotelName = hotelName;
 	}
-	public long getHotelPrice() {
+	public Long getHotelPrice() {
 		return hotelPrice;
 	}
-	public void setHotelPrice(long hotelPrice) {
+	public void setHotelPrice(Long hotelPrice) {
 		this.hotelPrice = hotelPrice;
 	}
 	public String getHotelCheckin() {

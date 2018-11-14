@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class PkgTotalOrder implements Serializable{
 	private String pkgOrderNum; // 주문번호
 	private String memberNum; // 회원등록번호
-	private int totalTouristNumber; // 여행자 총 인원
+	private Integer totalTouristNumber; // 여행자 총 인원
 	private String requestContent; // 요청사항 내용
 	private String promotionCode; // 프로모션 코드
 	public String getPkgOrderNum() {
@@ -20,10 +20,10 @@ public class PkgTotalOrder implements Serializable{
 	public void setMemberNum(String memberNum) {
 		this.memberNum = memberNum;
 	}
-	public int getTotalTouristNumber() {
+	public Integer getTotalTouristNumber() {
 		return totalTouristNumber;
 	}
-	public void setTotalTouristNumber(int totalTouristNumber) {
+	public void setTotalTouristNumber(Integer totalTouristNumber) {
 		this.totalTouristNumber = totalTouristNumber;
 	}
 	public String getRequestContent() {

@@ -5,7 +5,7 @@ import java.util.Date;
 @SuppressWarnings("serial")
 public class Flight implements Serializable{
 	private String pkgFlightNumber; // 항공권번호
-	private long pkgFlightPrice; // 항공권가격
+	private Long pkgFlightPrice; // 항공권가격
 	private String pkgFlightAirline; //항공사이름
 	private String pkgFlightName; // 항공권 편이름
 	private String pkgFlightSeat; // 좌석번호
@@ -28,10 +28,10 @@ public class Flight implements Serializable{
 	public void setPkgFlightNumber(String pkgFlightNumber) {
 		this.pkgFlightNumber = pkgFlightNumber;
 	}
-	public long getPkgFlightPrice() {
+	public Long getPkgFlightPrice() {
 		return pkgFlightPrice;
 	}
-	public void setPkgFlightPrice(long pkgFlightPrice) {
+	public void setPkgFlightPrice(Long pkgFlightPrice) {
 		this.pkgFlightPrice = pkgFlightPrice;
 	}
 	public String getPkgFlightAirline() {
