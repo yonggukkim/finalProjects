@@ -7,4 +7,6 @@
 	    ">
 	<bean class="controller.MemberController" />
 	<bean class="controller.BoardController" />
+	<bean class="controller.MainController" />
+	
 </beans>
