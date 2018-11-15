@@ -18,31 +18,9 @@ public class MemberService {
 
 	public Integer insertMember(Member member) {
 		// 디버깅코드
-		System.out.println("service"+ member.getMemberNum());
-		System.out.println("service"+ member.getMemberId());
+		System.out.println("getMemberId : "+ member.getMemberId());
 		
 		return memberRepository.insertMember(member);
 	}
-	public List<Member> selectMember(Member member) {
-		System.out.println("service" + member.getMemberNum());
-		return memberRepository.selectMemberByCondition(member);
-	}
-	public Integer updateMember(Member member) {
-		System.out.println("service"+ member.getMemberNum());
-		System.out.println("service"+ member.getMemberId());
-		
-		return memberRepository.updateMember(member);
-	}
-	public Integer deleteMember(String memberNum) {
-		System.out.println("service"+ memberNum);
-		
-		return memberRepository.deleteMember(memberNum);
-	}
-	public void ajaxSelect(HttpServletRequest request, Model model) {
-		Long result = Long.parseLong(request.getParameter("n"));
-		System.out.println("service"+result);
-		List list = memberRepository.ajaxSelect(result);
-		model.addAttribute("list",list);
-		model.addAttribute("result",result);
-	}
+
 }

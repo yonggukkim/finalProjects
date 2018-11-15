@@ -15,25 +15,23 @@ public class BoardController {
 	@Autowired
 	private BoardService boardService;
 
-	// 질문게시판
-//	@RequestMapping(value = "/qna_insert", method = RequestMethod.GET)
-//	public String qnaWrite(Model model) {
-//		return "qnaBoard/qna_insert";
-//	}
-
 	@RequestMapping(value = "/qna_insert", method = RequestMethod.GET)
-	public String handleStep1(Qna qna, Model model) {
-		// Integer result = null;
-		Integer result = boardService.insertQna(qna);
+	public String qnaInsert(Qna qna, Model model) {
+		model.addAttribute("qna", qna);
 		return "qnaBoard/qna_insert";
 	}
-//		if (result > 0) {
-//			model.addAttribute("result", result);
-//			return "qnaBoard/qna_write";
-//		} else {
-//			return "redirect:/mybatis-spring-web/qnaBoard/qna_write";
-//		}
-//	}
+
+	@RequestMapping(value = "/qna_insert", method = RequestMethod.POST)
+	public String qnaInsert1(Qna qna, Model model) {
+		Integer result = null;
+		result = boardService.insertQna(qna);
+		if (result > 0) {
+			model.addAttribute("qna", qna);
+			return "qnaBoard/qna_insert";
+		} else {
+			return "redirect:/finalProject/qnaBoard/qna_write";
+		}
+	}
 
 	@RequestMapping(value = "/qna_modify", method = RequestMethod.GET)
 	public String qnaModify(Model model) {

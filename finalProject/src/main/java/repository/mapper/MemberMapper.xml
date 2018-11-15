@@ -6,8 +6,51 @@
 <mapper namespace="repository.mapper.MemberMapper">
 <cache />
 <insert id="insertMember" parameterType="Member">
-	INSERT INTO MEMBER(MEMBER_NUM, MEMBER_ID, MEMBER_PW, MEMBER_NAME, MEMBER_BIRTH, MEMBER_GENDER, MEMBER_COUNTRY_NUM, MEMBER_PHONE, MEMBER_EMAIL, MEMBER_POSTCODE, MEMBER_ADDR1, MEMBER_ADDR2, MEMBER_TEL, MEMBER_MARRIGE, MEMBER_JOB, MEMBER_AGREE_MAILING, MEMBER_AGREE_SMS, MEMBER_AGREE_POST, MEMBER_AGREE_TEL, MEMBER_REG_DATE, MEMBER_MILEAGE, MEMBER_DVICE)
-	values (#{MEMBER_NUM},#{MEMBER_ID},#{MEMBER_PW},#{MEMBER_NAME},#{MEMBER_BIRTH},#{MEMBER_GENDER},#{MEMBER_COUNTRY_NUM},#{MEMBER_PHONE},#{MEMBER_EMAIL},#{MEMBER_POSTCODE},#{MEMBER_ADDR1},#{MEMBER_ADDR2},#{MEMBER_TEL},#{MEMBER_MARRIGE},#{MEMBER_JOB},#{MEMBER_AGREE_MAILING},#{MEMBER_AGREE_SMS},#{MEMBER_AGREE_POST},#{MEMBER_AGREE_TEL},#{MEMBER_REG_DATE},#{MEMBER_MILEAGE},#{MEMBER_DVICE})
+	INSERT INTO MEMBER(
+		MEMBER_NUM,
+	 	MEMBER_ID,
+	 	MEMBER_PW,
+	 	MEMBER_NAME,
+	 	MEMBER_GENDER,
+	 	MEMBER_COUNTRY_NUM,
+	 	MEMBER_PHONE,
+		MEMBER_EMAIL,
+	 	MEMBER_POSTCODE,
+	 	MEMBER_ADDR1,
+	 	MEMBER_ADDR2,
+	 	MEMBER_TEL,
+		MEMBER_MARRIGE,
+	 	MEMBER_JOB,
+	 	MEMBER_AGREE_MAILING,
+	 	MEMBER_AGREE_SMS,
+	 	MEMBER_AGREE_TEL,
+	 	MEMBER_AGREE_POST,
+	 	MEMBER_REG_DATE,
+	 	MEMBER_MILEAGE,
+		MEMBER_DVICE
+	)values(
+		(select nvl(max(member_num),0)+1 from member),
+		#{memberId},
+		#{memberPw},
+		#{memberName},
+		#{memberGender},
+		#{memberCountryNum},
+		#{memberPhone},
+		#{memberEmail},
+		#{memberPostcode},
+		#{memberAddr1},
+		#{memberAddr2},
+		#{memberTel},
+		#{memberMarrige},
+		#{memberJob},
+		#{memberAgreeMailing},
+		#{memberAgreeSms},
+		#{memberAgreeTel},
+		#{memberAgreePost},
+		SYSDATE,
+		#{memberMileage},
+		#{memberDvice}
+	)
 </insert>
 
 <!-- <resultMap type="Member" id="baseResultMap">

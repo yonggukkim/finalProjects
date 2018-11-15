@@ -13,12 +13,14 @@ public class MemberSessionRepository extends AbstractRepository{
 		SqlSession sqlSession = getSqlSessionFactory().openSession();
 		try {
 			String statement = namespace + ".insertMember";
-			System.out.println("Repository" + member.getMemberNum());
-			System.out.println("Repository" + member.getMemberId());
+			System.out.println("Repository : " + member.getMemberId());
 			member.setMemberRegDate(Calendar.getInstance().getTime()); // 캘린더라는 클래스에서 객체를 생성해 날짜 값을 저장해준다.
 			Integer result = sqlSession.insert(statement, member);
-			if(result > 0) sqlSession.commit();
-			else sqlSession.rollback();
+			System.out.println("result : "+result);
+			if(result > 0) 
+				sqlSession.commit();
+			else 
+				sqlSession.rollback();
 			return result; 
 		}finally {
 			sqlSession.close();

@@ -4,9 +4,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,12 +14,31 @@
 <title>qna_insert.jsp</title>
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+	integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+	crossorigin="anonymous">
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+	integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+	crossorigin="anonymous"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+	integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+	crossorigin="anonymous"></script>
+<!-- <script
+		src="http://localhost:8080/finalProject/vendor/jquery/jquery.min.js"></script>
+	<script
+		src="http://localhost:8080/finalProject/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+	<script
+		src="http://localhost:8080/finalProject/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<script src="http://localhost:8080/finalProject/js/scrolling-nav.js"></script> -->
 
 <!-- Custom styles for this template -->
 <link href="http://localhost:8080/finalProject/css/scrolling-nav.css"
@@ -63,8 +80,11 @@
 						<h2>질문글쓰기</h2>
 					</thead>
 					<tbody>
-						<form:form commandName="qna" action="qna_insert">
-
+						<form:form commandName="qna" action="qna_list">
+							<form:hidden path="qnaNum" value="1" />
+							<form:hidden path="memberNum" value="1" />
+							<form:hidden path="staffNumber" value="1" />
+							<form:hidden path="qnaCount" value="1" />
 							<tr>
 								<th>제목 :</th>
 								<td><form:input path="qnaSubject" /></td>
@@ -82,9 +102,8 @@
 								<td><form:password path="qnaPw" /></td>
 							</tr>
 							<tr>
-								<td colspan="2"><input type="submit" value="등록" onclick=""
-									class="" /> <input type="button" value="글 목록" class=" "
-									onclick="" /></td>
+								<td colspan="2"><input type="submit" value="등록"  />
+									<input type="button" value="글 목록" /></td>
 							</tr>
 						</form:form>
 				</table>
@@ -101,18 +120,7 @@
 		<!-- /.container -->
 	</footer>
 
-<!-- 	<!-- Bootstrap core JavaScript -->
-	<script
-		src="http://localhost:8080/finalProject/vendor/jquery/jquery.min.js"></script>
-	<script
-		src="http://localhost:8080/finalProject/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-	Plugin JavaScript
-	<script
-		src="http://localhost:8080/finalProject/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-	Custom JavaScript for this theme
-	<script src="http://localhost:8080/finalProject/js/scrolling-nav.js"></script> -->
+	<!-- 	<!-- Bootstrap core JavaScript -->
 
 </body>
 
