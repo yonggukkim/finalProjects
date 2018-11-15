@@ -48,6 +48,7 @@ public class BoardController {
 		System.out.println("GET LIST");
 		return "qnaBoard/qna_list";
 	}
+<<<<<<< HEAD
 //	@RequestMapping(value = "/qna_list", method = RequestMethod.GET)
 //	public String qnaListGet(Qna qna, Model model) {
 //		System.out.println("GET LIST");
@@ -165,4 +166,94 @@ public class BoardController {
 //	public String selfPlanDelete(Model model) {
 //		return "selfPlanBoard/selfPlan_delete";
 //	}
+=======
+
+	/*@RequestMapping(value = "/qna_detail", method = RequestMethod.GET)
+	public String qnaDetail(Model model) {
+		return "reviewBoard/qna_detail";
+	}
+
+	@RequestMapping(value = "/qna_delete", method = RequestMethod.GET)
+	public String qnaDelete(Model model) {
+		return "qnaBoard/qna_delete";
+	}
+
+	// 공지사항 게시판
+	@RequestMapping(value = "/notice_write", method = RequestMethod.GET)
+	public String noticeWrite(Model model) {
+		return "noticeBoard/notice_write";
+	}
+
+	@RequestMapping(value = "/notice_modify", method = RequestMethod.GET)
+	public String noticeModify(Model model) {
+		return "noticeBoard/notice_modify";
+	}
+
+	@RequestMapping(value = "/notice_list", method = RequestMethod.GET)
+	public String noticeList(Model model) {
+		return "noticeBoard/notice_list";
+	}
+
+	@RequestMapping(value = "/notice_detail", method = RequestMethod.GET)
+	public String noticeDetail(Model model) {
+		return "noticeBoard/notice_detail";
+	}
+
+	@RequestMapping(value = "/notice_delete", method = RequestMethod.GET)
+	public String noticeDelete(Model model) {
+		return "noticeBoard/notice_delete";
+	}
+
+	// 후기게시판
+	@RequestMapping(value = "/review_write", method = RequestMethod.GET)
+	public String reviewWrite(Model model) {
+		return "reviewBoard/review_write";
+	}
+
+	@RequestMapping(value = "/review_modify", method = RequestMethod.GET)
+	public String reviewModify(Model model) {
+		return "reviewBoard/review_modify";
+	}
+
+	@RequestMapping(value = "/review_list", method = RequestMethod.GET)
+	public String reviewList(Model model) {
+		return "reviewBoard/review_list";
+	}
+
+	@RequestMapping(value = "/review_detail", method = RequestMethod.GET)
+	public String reviewDetail(Model model) {
+		return "reviewBoard/review_detail";
+	}
+
+	@RequestMapping(value = "/review_delete", method = RequestMethod.GET)
+	public String reviewDelete(Model model) {
+		return "reviewBoard/review_delete";
+	}
+
+	// 자유여행플랜게시판
+	@RequestMapping(value = "/selfPlan_write", method = RequestMethod.GET)
+	public String selfPlanWrite(Model model) {
+		return "selfPlanBoard/selfPlan_write";
+	}
+
+	@RequestMapping(value = "/selfPlan_modify", method = RequestMethod.GET)
+	public String selfPlanModify(Model model) {
+		return "selfPlanBoard/selfPlan_modify";
+	}
+
+	@RequestMapping(value = "/selfPlan_list", method = RequestMethod.GET)
+	public String selfPlanList(Model model) {
+		return "selfPlanBoard/selfPlan_list";
+	}
+
+	@RequestMapping(value = "/selfPlan_detail", method = RequestMethod.GET)
+	public String selfPlanDetail(Model model) {
+		return "selfPlanBoard/selfPlan_detail";
+	}
+
+	@RequestMapping(value = "/selfPlan_delete", method = RequestMethod.GET)
+	public String selfPlanDelete(Model model) {
+		return "selfPlanBoard/selfPlan_delete";
+	}*/
+>>>>>>> 830bfdeb3f87b5433a6a84c2e794d66d806763b1
 }

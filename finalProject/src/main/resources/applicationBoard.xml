@@ -14,5 +14,7 @@
 	
 	<bean id="boardRepository" class="repository.BoardSessionRepository" />
 	<bean id="boardService" class="service.BoardService" />
+	<bean id="cartegoryService" class="service.CartegoryService" />
+	<bean id="cartegoryRepository" class="repository.CartegoryRepository" />
 
 </beans>	
