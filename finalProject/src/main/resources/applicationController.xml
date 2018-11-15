@@ -8,5 +8,4 @@
 	<bean class="controller.BoardController" />
 	<bean class="controller.MainController" />
 	<bean class="controller.StaffController" />
-	
 </beans>

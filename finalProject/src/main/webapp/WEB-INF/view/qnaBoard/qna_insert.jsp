@@ -44,6 +44,9 @@
 <link href="http://localhost:8080/finalProject/css/scrolling-nav.css"
 	rel="stylesheet">
 
+
+
+
 </head>
 
 <body id="page-top">
@@ -80,7 +83,7 @@
 						<h2>질문글쓰기</h2>
 					</thead>
 					<tbody>
-						<form:form commandName="qna" action="qna_list">
+						<form:form commandName="qna" action="qna_insert">
 							<form:hidden path="qnaNum" value="1" />
 							<form:hidden path="memberNum" value="1" />
 							<form:hidden path="staffNumber" value="1" />
@@ -102,8 +105,7 @@
 								<td><form:password path="qnaPw" /></td>
 							</tr>
 							<tr>
-								<td colspan="2"><input type="submit" value="등록"  />
-									<input type="button" value="글 목록" /></td>
+								<td colspan="2"><input type="submit" value="등록" /> <a href="qna_list"><input type="button" value="글 목록" /></a></td>
 							</tr>
 						</form:form>
 				</table>
