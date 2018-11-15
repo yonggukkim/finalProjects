@@ -15,15 +15,15 @@ public class BoardSessionRepository extends AbstractRepository {
 
 	public Integer insertQna(Qna qna) {
 		SqlSession sqlSession = getSqlSessionFactory().openSession();
-		String statement = namespace + ".insertQna";
 		try {
+			String statement = namespace + ".insertQna";
 			System.out.println("Repository" + qna.getQnaNum());
 			System.out.println("Repository" + qna.getMemberNum());
 			qna.setQnaDate(Calendar.getInstance().getTime());
 			Integer result = sqlSession.insert(statement, qna);
 			if (result > 0)
 				sqlSession.commit();
-			else
+			else 
 				sqlSession.rollback();
 			return result;
 		} finally {
