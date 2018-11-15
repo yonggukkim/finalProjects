@@ -43,7 +43,7 @@ public class BoardController {
 		return "qnaBoard/qna_list";
 	}
 
-	@RequestMapping(value = "/qna_detail", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/qna_detail", method = RequestMethod.GET)
 	public String qnaDetail(Model model) {
 		return "reviewBoard/qna_detail";
 	}
@@ -129,5 +129,5 @@ public class BoardController {
 	@RequestMapping(value = "/selfPlan_delete", method = RequestMethod.GET)
 	public String selfPlanDelete(Model model) {
 		return "selfPlanBoard/selfPlan_delete";
-	}
+	}*/
 }
