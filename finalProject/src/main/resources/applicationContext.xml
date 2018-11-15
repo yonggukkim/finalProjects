@@ -16,8 +16,8 @@
 						   http://www.springframework.org/schema/cache/spring-cache.xsd"
 >
 	<mvc:annotation-driven />
-<!-- 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />자동주입을 하기 위한 객체
- -->	<mvc:view-resolvers>
+<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" /> <!-- 자동주입을 하기 위한 객체 -->
+	<mvc:view-resolvers>
 		<mvc:jsp prefix="/WEB-INF/view/"/><!-- 파일 업로드 경로 설정 -->
 	</mvc:view-resolvers>
 	<mvc:resources location="/WEB-INF/view/" mapping="/**" cache-period="31556926" />
