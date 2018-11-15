@@ -24,7 +24,7 @@ public class BoardSessionRepository extends AbstractRepository {
 			if (result > 0)
 				sqlSession.commit();
 			else 
-				sqlSession.rollback();
+				sqlSession.rollback();	
 			return result;
 		} finally {
 			sqlSession.close();

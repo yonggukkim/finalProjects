@@ -7,20 +7,20 @@
 	<cache />
 
  
-<!-- 	<resultMap type="Qna" id="qnaMap">
-		<id column="qna_num" javaType="String" property="qnaNum" />
-		<id column="member_num" javaType="String" property="memberNum" />
-		<id column="staff_number" javaType="String" property="staffNumber" />
-		<result column="qna_date" javaType="Date" property="qnaDate" />
-		<result column="qna_subject" javaType="String"
+	<resultMap type="Qna" id="qnaMap">
+		<id column="qna_num" jdbcType="VARCHAR" property="qnaNum" />
+		<id column="member_num" jdbcType="VARCHAR"  property="memberNum" />
+		<id column="staff_number" jdbcType="VARCHAR"  property="staffNumber" />
+		<result column="qna_date" jdbcType="TIMESTAMP" property="qnaDate" />
+		<result column="qna_subject" jdbcType="VARCHAR" 
 			property="qnaSubject" />
-		<result column="qna_content" javaType="String"
+		<result column="qna_content" jdbcType="VARCHAR" 
 			property="qnaContent" />
-		<result column="qna_file" javaType="String" property="qnaFile" />
-		<result column="qna_pw" javaType="String" property="qnaPw" />
-		<result column="qna_Count " javaType="Long" property="qnaCount" />
+		<result column="qna_file" jdbcType="VARCHAR"  property="qnaFile" />
+		<result column="qna_pw" jdbcType="VARCHAR"  property="qnaPw" />
+		<result column="qna_Count " jdbcType="BIGINT"  property="qnaCount" />
 	</resultMap>
-
+<!-- 
 	<resultMap type="Notice" id="noticeMap">
 		<id column="notice_num" jdbcType="VARCHAR" property="noticeNum" />
 		<id column="staff_number" jdbcType="VARCHAR" property="staffNumber" />
@@ -65,6 +65,26 @@
 		<id column="member_num" jdbcType="VARCHAR" property="memberNum" />
 	</resultMap> 
 -->
+
+<select id="selectQnaByCondition" parameterType="Qna" resultMap="qnaMap">
+		SELECT
+		QNA_NUM
+		MEMBER_NUM, 
+		STAFF_NUMBER,
+		QNA_DATE,
+		QNA_SUBJECT,
+		QNA_CONTENT,
+		QNA_FILE,
+		QNA_PW,
+		QNA_COUNT
+		FROM QNA
+		<where>
+			<if test="qnaNum != null">
+				qna_num = #{qnaNum}
+			</if>
+		</where>
+	</select>
+	
  	<insert id="insertQna" parameterType="Qna">
 		insert into
 		QNA(QNA_NUM, MEMBER_NUM, STAFF_NUMBER, QNA_DATE, QNA_SUBJECT, QNA_CONTENT, QNA_FILE, QNA_PW, QNA_COUNT)
