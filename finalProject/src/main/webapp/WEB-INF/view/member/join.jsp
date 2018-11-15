@@ -281,7 +281,7 @@
 </div>
 
 
-<button type="button" class="btn" style="margin-bottom:20px">작성 완료</button>
+<button type="submit" class="btn" style="margin-bottom:20px">작성 완료</button>
 <button type="button" class="btn" style="margin-bottom:20px">취소</button>
 </div>
 </div>

@@ -13,5 +13,7 @@
 	<mvc:annotation-driven />
 	<bean id="boardRepository" class="repository.BoardSessionRepository" />
 	<bean id="boardService" class="service.BoardService" />
+	<bean id="memberRepository" class="repository.MemberSessionRepository" />
+	<bean id="memberService" class="service.MemberService" />
 
 </beans>	
