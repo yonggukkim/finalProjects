@@ -15,23 +15,22 @@ public class BoardController {
 	@Autowired
 	private BoardService boardService;
 
-	// 질문게시판
-//	@RequestMapping(value = "/qna_insert", method = RequestMethod.GET)
-//	public String qnaInsert(Model model) {
-//		return "qnaBoard/qna_insert";
-//	}
-
 	@RequestMapping(value = "/qna_insert", method = RequestMethod.GET)
 	public String qnaInsert(Qna qna, Model model) {
+		model.addAttribute("qna", qna);
+		return "qnaBoard/qna_insert";
+	}
+
+	@RequestMapping(value = "/qna_insert", method = RequestMethod.POST)
+	public String qnaInsert1(Qna qna, Model model) {
 		Integer result = null;
 		result = boardService.insertQna(qna);
 		if (result > 0) {
-			model.addAttribute("result", result);
+			model.addAttribute("qna", qna);
 			return "qnaBoard/qna_insert";
 		} else {
 			return "redirect:/finalProject/qnaBoard/qna_write";
 		}
-
 	}
 
 	@RequestMapping(value = "/qna_modify", method = RequestMethod.GET)

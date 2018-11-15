@@ -69,7 +69,7 @@
 		insert into
 		QNA(QNA_NUM, MEMBER_NUM, STAFF_NUMBER, QNA_DATE, QNA_SUBJECT, QNA_CONTENT, QNA_FILE, QNA_PW, QNA_COUNT)
 		values(#{qnaNum}, #{memberNum}, #{staffNumber}, #{qnaDate}, #{qnaSubject}, #{qnaContent}, #{qnaFile}, #{qnaPw},#{qnaCount})
-</insert>
+	</insert>
  
 
 </mapper>
